@@ -10,7 +10,7 @@
       background-color: #051D3B;
       border-radius: 40px;
     }
-    nav{
+.nav__header{
         position:absolute;
         width: 1376px;
         height: 56px;
@@ -19,7 +19,8 @@
 
     }
 
-.text-field{
+    
+.nav__textField{
     display: flex;
 flex-direction: column;
 align-items: flex-start;
@@ -31,16 +32,13 @@ right: 22.67%;
 top: 0%;
 bottom: 0%;
 
-/* Inside Auto Layout */
 
-/*flex: none;
-order: 0;
-align-self: stretch;
-flex-grow: 0;
-margin: 0px 0px;*/
 }
-.auto-layout{
-    display: flex;
+
+.nav__textField__base{
+/* Auto Layout */
+
+display: flex;
 flex-direction: column;
 align-items: flex-start;
 padding: 0px;
@@ -61,59 +59,280 @@ order: 0;
 align-self: stretch;
 flex-grow: 0;
 margin: 0px 0px;
+    
 }
-.auto-layout input{
-    flex: none;
+
+.nav__textField__base input{
+  display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px 14px;
+
+position: static;
+width: 752px;
+height: 56px;
+left: 0px;
+top: 0px;
+
+
+/* Inside Auto Layout */
+
+flex: none;
 order: 0;
 align-self: stretch;
 flex-grow: 0;
 margin: 8px 0px;
 }
 
+.nav__author{
+ /* author */
+
+
+/* Auto Layout */
+
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 12px;
+
+position: absolute;
+left: 92.3%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+
+border-radius: 8px; 
+}
+
+.nav__author__name{
+  position: static;
+width: 42px;
+height: 32px;
+left: 52px;
+top: 12px;
+
+
+/* Inside Auto Layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+margin: 0px 8px;
+}
+
+.nav__author_photo{
+ /* Photo */
+
+
+position: static;
+left: 11.32%;
+right: 58.49%;
+top: 21.43%;
+bottom: 21.43%;
+
+background: url("../img/photo_author.svg");
+
+/* Inside Auto Layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 0px 8px; 
+}
+
+.menu__navegacao{
+  position: absolute;
+width: 189px;
+height: 146px;
+left: 32px;
+top: 128px;
+}
+
+.menu__comunidade{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  
+  position: absolute;
+  width: 160px;
+  height: 48px;
+  left: 32px;
+  top: 226px;
+}
+.menu__editorCodigo{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  
+  position: absolute;
+  width: 189px;
+  height: 48px;
+  left: 32px;
+  top: 162px;
+}
+
+.menu__comunidade--menu{
+  position: absolute;
+left: 40%;
+right: 0%;
+top: 25%;
+bottom: 25%;
+
+font-family: Inter;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+
+/* Neutral/$white */
+
+color: #FFFFFF;
+
+opacity: 0.56;
+}
+.menu__comunidade--icon{
+  position: static;
+  width: 48px;
+  height: 48px;
+  left: 0px;
+  top: 0px;
+  
+  
+  /* Inside Auto Layout */
+  
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0px 16px;
+}
+
+.menu_editorCodigo--menu{
+  position: absolute;
+left: 33.86%;
+right: 0%;
+top: 25%;
+bottom: 25%;
+
+font-family: Inter;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+
+/* Neutral/$white */
+
+color: #FFFFFF;
+}
+
+.menu_editorCodigo--icon{
+  position: static;
+  width: 48px;
+  height: 48px;
+  left: 0px;
+  top: 0px;
+  
+  
+  /* Inside Auto Layout */
+  
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0px 16px;
+}
+
+
+
 }
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   @media screen and (max-width: 768px) {
-    body {
-
-      position:relative;
-      width: 768px;
-      height: 1024px;
-      overflow-y: scroll;
-      background-color: #051D3B;
-      border-radius: 40px;
-    }
-    nav{
-        position:absolute;
-        width: 704px;
-        height: 56px;
-        left: 32px;
-        top: 32px;
-
-    }
+   
   }
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
   @media screen and (max-width: 375px) {
-    body {
-
-      position:relative;
-      width: 375px;
-      height: 1024px;
-      overflow-y: scroll;
-      background-color: #051D3B;
-      border-radius: 24px;
-    }
-    nav{
-        position:absolute;
-        width: 343px;
-        height: 56px;
-        left: 16px;
-        top: 16px;
-
-    }
+   
   }

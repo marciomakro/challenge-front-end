@@ -2,33 +2,56 @@
 <html>
 <body>
     <header>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Challenger</title>
         <head>
             <link rel="stylesheet" type="text/css" href="css/estilo.css">
-        </head>
-        
-        
-        <nav>
-            
-            <div class="text-field">
-                <div class="auto-layout">
-            <input placeholder="Busque por algo" type="text" class="search">
-            <label></label>
+            <link rel="stylesheet" type="text/css" href="css/normalize.css">
+        </head>      
+            <nav class="nav__header">
+            <div class="nav__textField">
+            <div class="nav__textField__base">
+            <input classe="nav__textField__input" placeholder="Busque por algo" type="search" >
             </div>
             </div>
+            <div class="nav__author">
+                <div class="nav__author__name"></div>
+                <div class="nav__author_photo"></div>
+            </div>
+
+            <div class="logo">
             <img src="img/logo.svg" alt="Logo" />
-            
+            </div>
         </nav>
     </header>
     
+    <main>
 
-<section> 
+<section class="menu__navegacao"> 
+    <h5>Menu</h5>
+    <div class="menu__comunidade">
+        <div class="menu__comunidade--menu">Comunidade</div>
+        <div class="menu__comunidade--icon">
+            <img src="img/Icon_comunidade.svg" alt="icon comunidade"/></div>
+    </div>
+
+    <div class="menu__editorCodigo">
+        <div class="menu_editorCodigo--menu">Editor de código</div>
+        <div class="menu_editorCodigo--icon">
+            <img src="img/Icon_editor_codigo.svg" alt="icon editor código"/></div>
+    </div> 
+
 </section>
 
-<section> 
-</section>
-<article></article>
 
-<aside></aside>
+<section>
+    
+</section>
+
+
+</main>
+
 <footer></footer>
 
 <script src="js/script.js"></script>
